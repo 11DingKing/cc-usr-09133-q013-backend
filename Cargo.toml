@@ -1,4 +1,13 @@
 [package]
-name="backend_service"
-version="0.1.0"
-edition="2021"
+name = "domain_backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.9"
+tokio = { version = "1", features = ["full"] }
+scylla = "0.15"
+async-nats = "0.39"
+
+[dev-dependencies]
+actix-rt = "2.10"
